@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Galada&display=swap');
+
+body{
+    background-color: /* #D9C8F4 */ #F0C5E9;;
+}
+
+.title{
+    color: #675f5f;
+    text-align: center;
+    font-family: 'Galada', cursive;
+}
+
+
+h1.title{ font-size: 50px; margin-top: 5rem; }
+
+h2.title{ font-size: 35px; }
+
+.invite{
+    font-family: 'Roboto', sans-serif;
+    color: #675f5f;
+    text-align: center;
+    font-size: 16px;    
+}
+
+.invite span{
+    font-family: 'Galada', cursive;
+    color: #675f5f;
+    font-size: 18px;
+}
+
+.date {
+    color: #675f5f;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Galada', cursive;
+}
+
+.place { 
+    font-size: 16px; 
+    text-align: center;
+    color: #675f5f;
+    font-weight: bold;
+}
+
+.full-row{
+    height: 100vh;
+}
+
+img, video{width: 100%;}
+
+.fa-sharp{
+   font-size: 50px;
+}
+
+.fa-solid{
+color: #fff;
+font-size: 26px;
+}
+
+.picSofi{
+    border-radius: 25px;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn-whatsapp{
+    width: 60%;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.spacer {
+  margin: .5rem;
+}
+
+/* Slider */
+
+.slider-img{
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 35px;
+    -webkit-box-shadow: 8px 8px 5px 0px rgba(5,27,48,0.23);
+	-moz-box-shadow: 8px 8px 5px 0px rgba(5,27,48,0.23);
+	box-shadow: 8px 8px 5px 0px rgba(5,27,48,0.23);
+}
+
+.slider-container{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    align-items: center;
+    gap: .3em;
+}
+
+.slider-body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider-body-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.arrow-slider{
+    cursor: pointer;
+    width: 100%;
+    filter: invert(100%);
+}
+
+.arrow-slider:nth-of-type(2){
+    justify-self: end;
+}
